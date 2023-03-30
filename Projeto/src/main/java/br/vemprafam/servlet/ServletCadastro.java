@@ -57,7 +57,8 @@ public class ServletCadastro extends HttpServlet {
 				+ "<title>Resultado</title>\r\n"
 				+ "</head>\r\n"
 				+ "<body>\r\n"
-				+ "Produto " + descricao + " cadastrado"
+				+ "Produto " + descricao + " cadastrado<br/>"
+				+ "<a href=\"/Projeto\">voltar</a>"
 				+ "</body>\r\n"
 				+ "</html>");
 	}

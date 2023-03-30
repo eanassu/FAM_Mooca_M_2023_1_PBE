@@ -18,7 +18,7 @@ import br.vemprafam.pojo.Produto;
 /**
  * Servlet implementation class PrimeiraServlet
  */
-@WebServlet("/PrimeiraServlet")
+@WebServlet("/Lista")
 public class PrimeiraServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -64,6 +64,7 @@ public class PrimeiraServlet extends HttpServlet {
 					+ "</tr>");
 		}
 		out.println("</table>\r\n"
+				+ "<a href=\"/Projeto\">voltar</a>"
 				+ "</body>\r\n"
 				+ "</html>");
 	}
