@@ -56,6 +56,5 @@ public class Produto {
 		return "Produto [codigo=" + codigo + ", descricao=" + descricao + ", dataCompra=" + dataCompra + ", quantidade="
 				+ quantidade + ", preco=" + preco + "]";
 	}
-
 	
 }

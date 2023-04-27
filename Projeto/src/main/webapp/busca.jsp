@@ -10,7 +10,7 @@
 <title>Produto</title>
 </head>
 <body>
-<form>
+<form action="alterar">
 <%
 int codigo = Integer.parseInt(request.getParameter("codigo"));
 DaoProduto dao = new DaoProduto();

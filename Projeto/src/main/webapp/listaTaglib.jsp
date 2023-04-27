@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Produtos (taglib)</title>
+</head>
+<body>
+<jsp:useBean id="dao" class="br.vemprafam.dao.DaoProduto"/>
+<table border="1">
+<tr>
+	<th>código</th>
+	<th>descrição</th>
+	<th>data da compra</th>
+	<th>quantidade</th>
+	<th>preço</th>
+</tr>
+<c:forEach var="p" items="${dao.lista}">
+<tr>
+  <td>${p.codigo}</td>
+  <td>${p.descricao}</td>
+  <td><fmt:formatDate value="${p.dataCompra}" pattern="dd/MM/yyyy"/></td>
+  <td>${p.quantidade}</td>
+  <td><fmt:formatNumber value="${p.preco}" type="currency"/></td>
+</tr>
+</c:forEach>
+</table>
+<a href="/Projeto">voltar</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
