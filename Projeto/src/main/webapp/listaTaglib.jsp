@@ -9,7 +9,6 @@
 <title>Produtos (taglib)</title>
 </head>
 <body>
-<jsp:useBean id="dao" class="br.vemprafam.dao.DaoProduto"/>
 <table border="1">
 <tr>
 	<th>código</th>
@@ -18,7 +17,7 @@
 	<th>quantidade</th>
 	<th>preço</th>
 </tr>
-<c:forEach var="p" items="${dao.lista}">
+<c:forEach var="p" items="${produtos}">
 <tr>
   <td>${p.codigo}</td>
   <td>${p.descricao}</td>
